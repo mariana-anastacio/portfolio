@@ -66,7 +66,7 @@ main {
     padding-top: 35px;
     text-align: center;
     margin: auto;
-    margin-right: 170px;
+    margin-right: 300px;
 }
 
 .intro h1 {
@@ -123,18 +123,4 @@ main {
 .vertical-text ul li {
     font-size: 1.em;
     font-weight: 300;
-}
-
-.arrow-back {
-    position: relative;
-    width: 10%;
-    height: 400px;
-}
-
-.arrow-back img {
-    position: absolute;
-    bottom: -230px;
-    left: -1250px;
-    width: 80px;
-    height: auto;
 }
