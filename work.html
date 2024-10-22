@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-
+    <meta charset="UTF-8">
     <title>portfolio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,68 +9,91 @@
 
     <link rel="stylesheet" href="https://use.typekit.net/xtl8vhw.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_work.css">
 
 </head>
 <body>
     <header>
-        <div>
+        <div class="navbar">
             <a href="home.html">
                 <img src="logo.png" alt="Logo" class="logo">
             </a>
-                <div class="nav-links">
-                    <a href="work.html">work</a>
-                    <a href="about.html">about me</a>
-                    <a href="emailme.html">email me</a>
-                </div>
+            <div class="nav-links">
+                <a href="work.html">work</a>
+                <a href="about.html">about me</a>
+                <a href="emailme.html">email me</a>
             </div>
+        </div>
     </header>        
 
-    <div class="div-section">
-        <section class="about-section">
-            <div class="about">
-                <h2>About</h2>
-                    <div class="tiny-shape"></div>
-                <p>Here you can find my projects,</p>
-                <p>focused on 3D modeling and</p>
-                <p>animation, character design,</p>
-                <p>storytelling, and game</p>
-                <p>development.</p>
-            </div>
-            <div class="programs">
-                <h2>Programs used</h2>
-                    <div class="tiny-shape2"></div>
-                <ul>
-                    <p>Blender</p>
-                    <p>Unity</p>
-                    <p>Nomad</p>
-                    <p>Adobe Illustrator</p>
-                    <p>Adobe Premiere</p>
-                    <p>Adobe Photoshop</p>
-                    <p>Adobe After Effects</p>
-                    <p>Adobe InDesign</p>
-                    <p>Procreate</p>
-                </ul>
-            </div>
-        </section>
-    
-    <div class="descarrilados">
-        <section class="descarrilados-image">
-            <img src="descarrilados.png" alt="Descarrilados project">
-        </section>
-
-        <section clss="descarrilados-video">
-            <video loop muted autoplay>
-                <source src="descarrilados_cover_title.mp4" type="video/mp4">
-            </video>
-        </section>
+    <!--Introduction text-->
+    <div class="intro-section">
+        <div class="about">
+            <h2>About</h2>
+                <div class="tiny-shape"></div>
+            <li>Here you can find my projects,</li>
+            <li>focused on 3D modeling and</li>
+            <li>animation, character design,</li>
+            <li>storytelling, and game</li>
+            <li>development.</li>
+        </div>
+        <div class="programs">
+            <h2>Programs used</h2>
+                <div class="tiny-shape2"></div>
+                <li>Blender</li>
+                <li>Unity</li>
+                <li>Nomad</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe Premiere</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe After Effects</li>
+                <li>Adobe InDesign</li>
+                <li>Procreate</li>
+        </div>
     </div>
-
     
+    <!--Descarrilados Project Cover-->
+    <div class="descarrilados">
+        <img class="descarrilados-image" src="descarrilados.png" alt="Descarrilados project">
+        <video class="descarrilados-video" src="descarrilados_cover_title.mp4" loop muted></video>
+    </div>
+    
+    <script src="descarrilados.js"></script> <!-- Reference to the external JS file -->
 
-    <section class="project2">
-        <img src="project2.png" alt="Project2">
-    </section>
+    <!--Overwatch Project Cover-->
+    <div class="overwatch">
+        <img class="overwatch-image" src="overwatch_cover.png" alt="Overwatch project">
+        <video class="overwatch-video" src="cover_video_overwatch.mp4" loop muted></video>
+    </div>
+    
+    <script src="overwatch.js"></script> <!-- Reference to the external JS file -->
 
+    <div>
+    <!--Benji Project Cover-->
+    <div class="benji">
+        <img class="benji-image" src="benji_cover.png" alt="Benji project">
+        <video class="benji-video" src="benji_cover_video.mp4" loop muted></video>
+    </div>
+    
+    <script src="benji.js"></script> <!-- Reference to the external JS file -->
+    </div> 
+
+    <!--Bobby Project Cover-->
+    <div class="bobby">
+        <img class="bobby-image" src="bobby_cover_image.png" alt="Bobby project">
+        <video class="bobby-video" src="bobby_cover.mp4" loop muted></video>
+    </div>
+        
+    <script src="bobby.js"></script> <!-- Reference to the external JS file -->
+    </div> 
+
+    <!--False Identity Project Cover-->
+    <div class="falseid">
+        <img class="falseid-image" src="false_image_cover.png" alt="Falseid project">
+        <video class="falseid-video" src="boardgame_cover.mp4" loop muted></video>
+    </div>
+            
+    <script src="falseid.js"></script> <!-- Reference to the external JS file -->
+    </div> 
 
 </body>

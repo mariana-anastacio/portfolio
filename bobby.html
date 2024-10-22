@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.typekit.net/xtl8vhw.css">
+
+    <link rel="stylesheet" href="style_bobby.css">
+
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="home.html">
+                <img src="logo.png" alt="Logo" class="logo">
+            </a>
+            <div class="nav-links">
+                <a href="work.html">work</a>
+                <a href="about.html">about me</a>
+                <a href="emailme.html">email me</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h1>Bobby's World <br> - Unity Game </h1>
+        <div class="content">
+            <div class="paragraph">
+                <p>For this projected I developed a small game in Unity called Bobby's
+                World, using already existing 3D assets, creating a enjoyable environment with interactions, using C# as the coding languge.
+                It served as a way to put to work my coding knowledge and learn how to use the basis of Unity.</p>
+            </div>
+
+            <div class="tools">
+                <div class="tool">Unity</div>
+                <div class="tool">Procreate</div>
+                <div class="tool">Illustrator</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bobby Video -->
+    <div class="video-container">
+        <img src="video_cover_bobby.png" alt="Cover Image" class="video-cover" id="bobbyCover">
+        <video controls class="bobby-video" id="bobbyVideo" style="display:none;">
+            <source src="bobby_video_1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+    <div class="container2">
+        <!-- Overview -->
+        <div class="row">
+            <div class="left-column">
+                <p>01 Overview</p>
+                <div class="bullet">•</div>
+                <h2>Bobby's World</h2>
+            </div>
+            <div class="right-column">
+                <p>In this game the camera follows the character around the environment maintaining the same distance at all times.
+                When the character walks or runs there are footstep sounds aligned with each footstep, as well as a jumping animation
+                when he jumps. For the environment and it's intercations, there is a background music playing while Bobby is exploring.
+                There are also several coins which he can catch and make a sound as they are being collected, as well as a coin count in
+                the console. Besides, there's a tresoure box that he can open.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="photo-photo1">
+        <img src="bobby_left.png" alt="photos" class="photo-left">
+        <img src="bobby_right.png" alt="photos" class="photo-right">
+    </div>
+
+    <video class="bobby_game" autoplay muted loop>
+        <source src="bobby_videoloop.mp4" type="video/mp4">
+    </video> 
+
+    <div class="container2">
+        <!-- Overview -->
+        <div class="row">
+            <div class="left-column">
+                <p>02 Graphics</p>
+                <div class="bullet">•</div>
+                <h2>Logo Design</h2>
+            </div>
+            <div class="right-column">
+                <p>I also decided to create a logo for this mini-game. For that, I simply drew a cartoon version of Bobby
+                    and added the title of the game with a typography that made sense with the rest of the visuals. In this case,
+                    I chose "Ohno Softie Variable Black".
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo-design">
+        <img src="bobby_logo.png" alt="logo_bobby" class="logo_bobby">
+    </div>
+
+
+    <script src="bobby2.js"></script> <!-- Script for cover image of the video-->
+
+</body>

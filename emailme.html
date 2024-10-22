@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xtl8vhw.css">
+    <link rel="stylesheet" href="style_emailme.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="home.html">
+                <img src="logo.png" alt="Logo" class="logo">
+            </a>
+            <div class="nav-links">
+                <a href="work.html">work</a>
+                <a href="about.html">about me</a>
+                <a href="emailme.html">email me</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h1>let's work <br> together!</h1>
+            
+            <div class="email-container">
+                <form action="https://formspree.io/f/xvgogroa" method="POST" id="contact-form">
+                    <div class="input-group">
+                        <label class="input-label" for="name">Your Name or Email:</label>
+                        <input type="text" id="name" class="input-field" name="name" placeholder="your name or email" required />
+                    </div>
+                    <div class="input-group">
+                        <label class="input-label" for="subject">Subject:</label>
+                        <input type="text" id="subject" class="input-field" name="subject" placeholder="subject" required />
+                    </div>
+                    <div class="input-group">
+                        <label class="input-label" for="message">Message:</label>
+                        <textarea id="message" class="input-field" name="message" placeholder="write your message" required></textarea>
+                    </div>
+                    <button type="submit" id="send-button">Send</button>
+                </form>
+                
+            </div>            
+        </div>
+
+        <div class="sidebar">
+            <p>Feel free to contact me! <br>
+                If you wish for me to get back to you,
+                please leave your email so I can
+                respond. <br> <br>
+                I hope to hear from you!</p>
+        </div>
+
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/mariana-anastácio-781811225/" target="_blank" rel="noopener noreferrer">
+                <img src="linkedin-icon.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.behance.net/mianaaa" target="_blank" rel="noopener noreferrer">
+                <img src="behance-icon.png" alt="Behance">
+            </a>
+        </div>
+    </div>
+    <script src="emailme.js"></script>
+    <script src="emailme2.js"></script>
+    
+</body>
+</html>

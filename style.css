@@ -18,34 +18,35 @@ body {
 header {
     width: 100%;
     background-color: #000;
-    display: inline-block;
-    justify-content: space-between;
-    padding: 2px 15px;
     position: fixed;
     top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px; /* Add padding for spacing */
 }
 
 .logo {
-    margin-left: 30px;
-    margin-top: 20px;
     width: 60px;
-    margin-bottom: 15px;
+    margin-left: 35px;
+    margin-top: 8px;
 }
 
 .nav-links {
-    margin-left: 1140px;
-    display: inline;
+    display: flex;
+    margin-right: 35px;
 }
 
 .nav-links a {
     font-family: "Montserrat", sans-serif;
     font-size: 1.05em;
     color: white;
-    justify-content: space-between;
     text-decoration: none;
     margin-left: 50px;
-    position: relative;
-    bottom: 25px;
 }
 
 .nav-links a:hover {
@@ -137,138 +138,3 @@ main {
     width: 80px;
     height: auto;
 }
-
-/* Work Page */
-.div-section{
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 140px;
-}
-
-.about-section {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.about, .programs {
-    flex: 1px;
-    padding: 20px;
-    width: 45%;
-}
-
-.about {
-    margin-left: 1030px;
-    margin-top: 25px;
-}
-
-.programs {
-    margin-right: 1000px;
-    margin-top: 25px;
-}
-
-.about h2, .programs h2 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.programs h2 {
-    position: relative;
-    right: 350px;
-}
-
-.programs ul {
-    position: relative;
-    right: 350px;
-}
-
-.tiny-shape {
-    width: 17px;
-    height: 2px;
-    background-color: #000000;
-    margin-bottom: 15px;
-}
-
-.tiny-shape2 {
-    width: 17px;
-    height: 2px;
-    background-color: #000000;
-    margin-bottom: 20px;
-    position: relative;
-    right: 350px;
-}
-
-.about p, .programs ul {
-    font-size: 13px;
-}
-
-.programs ul {
-    list-style: none;
-}
-
-.programs ul li {
-    display: inline;
-
-}
-
-.descarrilados-image {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 40px
-}
-
-.descarrilados-video {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-}
-
-.descarrilados-image img, .descarrilados-video video  {
-    width: 50%;
-    height: 50%;
-    display: flex;
-}
-
-.descarrilados img, .descarrilados video {
-    transition: opacity 0.3s ease;
-    object-fit: cover;
-}
-
-.descarrilados video {
-    display:none;
-}
-
-.descarrilados:hover img {
-    display: none;
-}
-
-.descarrilados:hover video {
-    display: inline-block;
-}
-
-.project2 {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 50px
-}
-
-.project2 img {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-
-
-

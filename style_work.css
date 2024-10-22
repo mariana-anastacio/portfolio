@@ -1,0 +1,128 @@
+/* General */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #cdd7d5;
+    color: #000000;
+}
+
+header {
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px; /* Add padding for spacing */
+}
+
+.logo {
+    width: 60px;
+    margin-left: 35px;
+    margin-top: 8px;
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 35px;
+}
+
+.nav-links a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.05em;
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.nav-links a:hover {
+    color: rgb(95, 95, 95);
+}
+
+/* Work Page */
+/* Text Part */
+.intro-section{
+    padding: 60px;
+    display: flex;
+    text-decoration: none;
+}
+
+.about, .programs {
+    list-style: none;
+    padding: 50px;
+    margin-top: 60px;
+}
+
+.about h2, .programs h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tiny-shape {
+    width: 17px;
+    height: 2px;
+    background-color: #000000;
+    margin-bottom: 15px;
+}
+
+.tiny-shape2 {
+    width: 17px;
+    height: 2px;
+    background-color: #000000;
+    margin-bottom: 15px;
+}
+
+.about li, .programs li {
+    font-size: 15px;
+}
+
+/* Descarrilados Project Cover */
+.descarrilados, .overwatch, .benji, .bobby, .falseid {
+    width: 100vw; 
+    height: auto; /* Allow height to adjust based on content */
+    position: relative;
+    overflow: hidden; /* Prevent overflow when videos are positioned absolutely */
+    margin: 0; /* Ensure no default margins are applied */
+}
+
+/* Images */
+.descarrilados-image, .overwatch-image, .benji-image, .bobby-image, .falseid-image {
+    max-width: 100%;
+    width: 100%; /* Use 100% to fill the width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    z-index: 1;
+    cursor: pointer; /* Change cursor to pointer on images */
+    margin-bottom: 15px;
+}
+
+/* Videos */
+.descarrilados-video, .overwatch-video, .benji-video, .bobby-video, .falseid-video {
+    max-width: 100%;
+    width: 100%; /* Use 100% to fill the width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the video covers the area without distortion */
+    position: absolute; /* Allows it to overlay the image */
+    top: 0; /* Align video to the top */
+    left: 0; /* Align video to the left */
+    z-index: 2; /* Ensure the video is above the image */
+    display: none; /* Initially hidden */
+    cursor: pointer; /* Change cursor to pointer on videos */
+    opacity: 0; /* Start invisible for smooth transitions */
+    transition: opacity 0.3s ease;
+}
+
+.show {
+    display: block; /* Show the video */
+    opacity: 1; /* Fade in smoothly */
+}
