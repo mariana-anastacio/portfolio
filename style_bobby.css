@@ -193,7 +193,7 @@ h2 {
 
 .logo-design {
     display: flex;
-    align-items: center;                     
-    gap: 10px;                    
-    scale: 30%;
+    align-items: center;                                     
+    scale: 38%;
+    margin-top: -600px;
 }

@@ -1,31 +1,44 @@
 function setupVideoPlayer(coverId, videoId) {
-    const videoCover = document.getElementById(coverId);  // The cover image
-    const video = document.getElementById(videoId);  // The video element
+    const videoCover = document.getElementById(coverId);
+    const video = document.getElementById(videoId);
 
-    // Debugging: Check if the elements exist in the console
-    console.log('videoCover:', videoCover);
-    console.log('video:', video);
-
-    // When the cover image is clicked
     videoCover.addEventListener('click', () => {
-        videoCover.style.display = 'none';  // Hide the cover image
-        video.style.display = 'block';  // Show the video
-        video.play();  // Start playing the video
+        videoCover.style.display = 'none'; // Hide the cover image
+        video.style.display = 'block'; // Show the video
+        video.play(); // Start playing the video
     });
 
-    // Optional: When the video is paused or ended, show the cover image again
-    video.addEventListener('pause', () => {
-        videoCover.style.display = 'block';  // Show the cover image
-        video.style.display = 'none';  // Hide the video
-    });
-
+    // When the video ends, show the cover image again
     video.addEventListener('ended', () => {
-        videoCover.style.display = 'block';  // Show the cover image again
-        video.style.display = 'none';  // Hide the video
+        videoCover.style.display = 'block'; // Show the cover image again
+        video.style.display = 'none'; // Hide the video
     });
+
+    // Prevent cover image from reappearing when manually pausing or interacting with the video
+    video.addEventListener('pause', (event) => {
+        if (video.currentTime === video.duration) {
+            videoCover.style.display = 'block'; // Show the cover image again only when video ends
+            video.style.display = 'none'; // Hide the video
+        }
+    });
+
+    // Use IntersectionObserver to detect when the video goes out of view
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                // If video is out of view, stop the video and show the cover
+                videoCover.style.display = 'block';
+                video.style.display = 'none';
+                video.pause();
+                video.currentTime = 0; // Optionally, reset video to the start
+            }
+        });
+    });
+
+    // Observe the video element
+    observer.observe(video);
 }
 
-// Initialize Bobby video
+// Setup for the bobby video
 setupVideoPlayer('bobbyCover', 'bobbyVideo');
-
 

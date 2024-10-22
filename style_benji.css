@@ -100,8 +100,15 @@ p {
 }
 
 
-.benji-animation {
+.video-container {
     width: 100vw;
+    display: flex;              /* Use flexbox to center content */
+    justify-content: center;    /* Center horizontally */
+    align-items: center;        /* Center vertically */
+}
+
+.benji-animation {
+    width: 50vw;               /* Set the width of the video */
 }
 
 .container2 {
@@ -110,10 +117,10 @@ p {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding-top: 70px;
+    padding-top: 50px;
     padding-left: 500px;
     padding-right: 200px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
 
 .row {

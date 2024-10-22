@@ -40,7 +40,7 @@ function setupVideoPlayer(coverId, videoId) {
 }
 
 // Setup for the first video
-setupVideoPlayer('videoCover', 'descarriladosVideo');
+setupVideoPlayer('videoCover', 'descarriladosVideo', 'https://www.youtube.com/embed/SYQNbGsH-PI?rel=0');
 
 // Setup for the second video
 setupVideoPlayer('trailerCover', 'trailerVideo');

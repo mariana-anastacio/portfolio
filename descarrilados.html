@@ -55,10 +55,16 @@
     </div>
 
     <div class="video-container">
-        <img src="cover_image.png" alt="Cover Image" class="video-cover" id="videoCover">
-        <video controls class="descarrilados-video" id="descarriladosVideo" style="display:none;">
-            <source src="Video Mapping Final.mp4" type="video/mp4">
-        </video>
+        <!-- Cover image for the main video -->
+        <img src="cover_image.png" alt="Cover Image" class="video-cover" id="videoCover" style="cursor: pointer;">
+    
+        <!-- YouTube iframe for the main video, initially hidden -->
+        <iframe id="descarriladosVideo" class="descarrilados-video"
+            src="https://www.youtube.com/embed/SYQNbGsH-PI?rel=0"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style="display: none; width: 100vw; height: 100vh;"></iframe>>
+        </iframe>
     </div>
 
     <div class="container2">
