@@ -27,10 +27,10 @@ function setupVideoPlayer(coverId, videoId) {
         entries.forEach(entry => {
             if (!entry.isIntersecting) {
                 // If video is out of view, stop the video and show the cover
-                videoCover.style.display = 'block';
-                video.style.display = 'none';
-                video.pause();
-                video.currentTime = 0; // Optionally, reset video to the start
+                videoCover.style.display = 'block'; // Show the cover image
+                video.style.display = 'none'; // Hide the video
+                video.pause(); // Pause the video
+                video.currentTime = 0; // Reset video to the start
             }
         });
     });
@@ -40,8 +40,7 @@ function setupVideoPlayer(coverId, videoId) {
 }
 
 // Setup for the first video
-setupVideoPlayer('videoCover', 'descarriladosVideo', 'https://www.youtube.com/embed/SYQNbGsH-PI?rel=0');
+setupVideoPlayer('videoCover', 'descarriladosVideo');
 
 // Setup for the second video
 setupVideoPlayer('trailerCover', 'trailerVideo');
-

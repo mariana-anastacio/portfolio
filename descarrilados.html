@@ -57,14 +57,13 @@
     <div class="video-container">
         <!-- Cover image for the main video -->
         <img src="cover_image.png" alt="Cover Image" class="video-cover" id="videoCover" style="cursor: pointer;">
-    
+        
         <!-- YouTube iframe for the main video, initially hidden -->
         <iframe id="descarriladosVideo" class="descarrilados-video"
             src="https://www.youtube.com/embed/SYQNbGsH-PI?rel=0"
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-            style="display: none; width: 100vw; height: 100vh;"></iframe>>
-        </iframe>
+            style="display: none; width: 100vw; height: 100vh;"></iframe>
     </div>
 
     <div class="container2">
@@ -138,10 +137,12 @@
 
     <!-- Trailer Video -->
     <div class="video-container">
-        <img src="trailer_cover.jpg" alt="Cover Image" class="video-cover" id="trailerCover">
-        <video controls class="descarrilados-video" id="trailerVideo" style="display:none;">
-            <source src="Trailer Multimedia Lab.mp4" type="video/mp4">
-        </video>
+        <img src="trailer_cover.jpg" alt="Cover Image" class="video-cover" id="trailerCover" style="cursor: pointer;">
+        <iframe id="trailerVideo" class="descarrilados-video"
+            src="https://www.youtube.com/embed/_IeHtIjFh7E"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style="display: none; width: 100vw; height: 100vh;"></iframe>
     </div>
 
     <!-- Process Character Design -->
@@ -371,4 +372,5 @@
     </div>
 
     <script src="descarrilados2.js"></script> <!-- Script for cover image of the video-->
+    
 </body>
