@@ -29,7 +29,6 @@ function setupVideoPlayer(coverId, videoId) {
                 // If video is out of view, stop the video and show the cover
                 videoCover.style.display = 'block'; // Show the cover image
                 video.style.display = 'none'; // Hide the video
-                video.pause(); // Pause the video
                 video.currentTime = 0; // Reset video to the start
             }
         });

@@ -10,12 +10,11 @@ body {
     background-color: #cfcfcf;
     color: #000000;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align elements horizontally */
     height: 100vh;
     overflow: hidden;
     padding-top: 70px;
-    background-image: url(background6.png);
     background-size: cover;
     background-position: center;  /* Centers the image */
     background-repeat: no-repeat;  /* Prevents the image from repeating */
@@ -28,6 +27,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 1000;
+    height: 70px; /* Set the height of the navbar */
 }
 
 .navbar {
@@ -62,7 +62,9 @@ header {
 
 main {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack main content vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center; /* Center items horizontally */
     width: 90%;
     max-width: 1200px;
     position: relative;
@@ -83,6 +85,7 @@ main {
     line-height: 0.8;              /* Adjust line height */
 }
 
+
 .corner-text {
     position: fixed;
     top: 100px;
@@ -94,3 +97,67 @@ main {
 .corner-text p {
     margin: 0;
 }
+
+.square-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between the squares */
+    margin-top: 20px; /* Space below the big text */
+    justify-content: flex-end; /* Align squares to the right */
+    align-items: flex-start; /* Align squares to the top */
+    padding: 20px;
+    height: calc(100vh - 70px - 80px); /* Adjust height for squares to fill available space */
+    width: 100%; /* Ensure full width for alignment */
+}
+
+/* Individual square styles */
+.square {
+    width: 120px;
+    height: 120px;
+    background-color: #000000;
+    transition: background-color 0.3s ease;
+}
+
+.square:hover {
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+}
+
+/* Assign specific images to each square on hover */
+#square1:hover {
+    background-image: url('image2.jpeg');
+}
+
+#square2:hover {
+    background-image: url('image3.jpeg');
+}
+
+#square3:hover {
+    background-image: url('image1.jpeg');
+}
+
+#square4:hover {
+    background-image: url('image4.jpeg');
+}
+
+#square5:hover {
+    background-image: url('image5.jpeg');
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+    .square {
+        width: 100px;
+        height: 100px;
+    }
+
+    .square-container {
+        justify-content: center; /* Center the squares on smaller screens */
+    }
+
+    .big-text {
+        font-size: 15vw; /* Adjust font size for smaller screens */
+    }
+}
+
