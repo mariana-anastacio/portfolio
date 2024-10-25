@@ -97,3 +97,23 @@ header {
     line-height: 1.5; /* Improve readability */
     font-style: italic;
 }
+
+.download-button {
+    margin-top: 20px; /* Space between text and button */
+    align-self: flex-start; /* Align button to the left of the text container */
+}
+
+.download-button button {
+    font-family: "Montserrat", sans-serif;
+    padding: 10px 20px;
+    background-color: #161616;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-button button:hover {
+    background-color: #555; /* Change color on hover */
+}
+
